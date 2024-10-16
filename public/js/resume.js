@@ -53,33 +53,28 @@ function zoomImages(className) {
   zoomImages("img-zoomable");
 })(jQuery);
 
-// Lấy modal
 var modal = document.getElementById("modal");
 var img = document.getElementsByClassName("zoomable");
 var modalImg = document.getElementById("img01");
 var span = document.getElementsByClassName("close")[0];
 
-// Lặp qua tất cả các hình ảnh
 for (let i = 0; i < img.length; i++) {
   img[i].onclick = function () {
-    modal.style.display = "flex"; // Hiện modal
-    modalImg.src = this.src; // Lấy src của hình ảnh đang nhấn
+    modal.style.display = "flex";
+    modalImg.src = this.src;
   };
 }
 
-// Khi nhấn vào biểu tượng đóng, ẩn modal
 span.onclick = function () {
   modal.style.display = "none";
 };
 
-// Khi nhấn ra ngoài hình ảnh, ẩn modal
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 };
 
-// Khi nhấn phím Esc, ẩn modal
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     modal.style.display = "none";
