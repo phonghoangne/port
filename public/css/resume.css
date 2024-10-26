@@ -6,6 +6,44 @@ body {
   color: #34495e;
   font-size: 20px;
 }
+.resume-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.project:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
 
 @media (min-width: 992px) {
   body {
