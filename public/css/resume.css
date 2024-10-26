@@ -13,10 +13,10 @@ body {
 }
 
 .project {
-  margin-bottom: 30px;
-  padding: 15px;
+  margin-bottom: 20px; /* Adjusted margin below the box */
+  padding: 10px 15px; /* Reduced padding for height */
   background-color: #ffffff;
-  border: 1px solid #dee2e6;
+  border: 1px solid #20c997; /* Border color */
   border-radius: 8px;
   transition: box-shadow 0.3s;
 }
@@ -26,14 +26,16 @@ body {
 }
 
 .project h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem; /* Slightly reduced font size for heading */
   color: #343a40;
+  margin: 0; /* Remove default margin */
 }
 
 .project p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Slightly reduced font size for paragraph */
   color: #495057;
-  line-height: 1.6;
+  line-height: 1.4; /* Adjusted line height */
+  margin: 0; /* Remove default margin */
 }
 
 .project a {
